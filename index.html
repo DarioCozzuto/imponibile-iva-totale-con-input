@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>prompt</title>
+</head>
+<script>
+	//prompt permette di fare come output un form di imput in stile alert, il cui valore immesso dall'utente si associa alla variabile utilizzata per fare il prompt,sotto forma di testo("56"non 56).
+	prezzoUnitario=prompt("digita il prezzo unitario");
+	//per trasformarlo in valore numerico decimale bisogna utilizzare parseFloat, float=decimale
+	prezzoUnitarioDec=parseFloat(prezzoUnitario);
+	
+	quantita=prompt("digità il numero di prodotti");
+	quantitaDec=parseFloat(quantita);
+	
+	imponibile=prezzoUnitarioDec*quantitaDec;
+	iva=imponibile*0.22;
+	totale=imponibile+iva;
+	
+	alert("l'imponibile e':"+imponibile+"  l'iva e:'"+iva+"  il totale e':"+totale);
+	</script>
+<body>
+</body>
+</html>
+
+
